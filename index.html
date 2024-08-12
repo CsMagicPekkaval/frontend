@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .image-container {
+        display: inline-block;
+        margin-right: 20px;
+        /* 可以調整間距 */
+        display: flex;
+        align-items: center;
+        /* 確保所有圖片在同一高度 */
+        display: flex;
+        align-items: flex-start;
+        /* 確保每個圖片+文字的組合都在同一高度對齊 */
+        gap: 15px;
+        /* 控制每個組合之間的間距 */
+    }
+
+    body {
+        font-size: 14px;
+        /* 全局字體大小 */
+    }
+
+    .text-container {
+        width: 20ch;
+        /* 設置寬度為10個字符 */
+        word-wrap: break-word;
+        margin: 20px 0;
+        /* 調整文字組之間的間距 */
+        height:50px;
+
+    }
+
+    .money-controller {
+        margin: 30px 0;
+        /* 調整文字組之間的間距 */
+    }
+
+    .item {
+        text-align: center;
+        /* 使圖片和文字居中對齊 */
+    }
+
+    .item img {
+        display: block;
+        margin: 0 auto;
+        /* 確保圖片在文字說明上方並居中 */
+    }
+</style>
+
+<body>
+    <div class="image-container">
+        <div class="item">
+            <img src="https://img.pchome.com.tw/cs/cms/creatives/onsale/bbd61043-48d5-412b-8103-b09f68c48001.jpeg?width=480"
+                width="80" />
+            <p class="text-container">雷蛇Razer Iskur 電競椅 布織灰</p>
+            <h1 class="money-controller">$6,999</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.pchome.com.tw/cs/cms/creatives/onsale/4707a1a2-ab11-477f-87ee-6a07cc3edc3a.jpeg?width=480"
+                width="80" />
+            <p class="text-container">DeathAdder V3 PRO 煉獄蝰蛇 超輕量無線人體工學滑鼠</p>
+            <h1 class="money-controller">$3,490</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.pchome.com.tw/cs/items/DMBJ0OA900HLCPL/000007_1718951899.jpg?width=480" width="80" />
+            <p class="text-container">【Instant】Vortex Pro 9.5L智慧萬用氣炸烤箱</p>
+            <h1 class="money-controller">$5,580</h1>
+        </div>
+        <div>
+            <img src="https://img.pchome.com.tw/cs/items/DCAW1PA900HI4BP/000001_1723442236.png" width="80" />
+            <p class="text-container">FUJIFILM ApeosPort Print 4020SD A4黑白雷射無線印表機</p>
+            <h1>$6,990</h1>
+        </div>
+        <div>
+            <img src="https://img.pchome.com.tw/cs/items/DXBG3VA900HLJSF/000007_1719211682.jpg?width=480" width="80" />
+            <p class="text-container">【毛孩時代】犬貓皮膚專科益生菌x3盒 (30包/盒)</p>
+            <h1>$1,464</h1>
+        </div>
+        <div>
+            <img src="https://img.pchome.com.tw/cs/items/DYAJD51900GOBKS/000007_1720599001.jpg?width=480" width="80" />
+            <p class="text-container">Apple Watch Series 9 GPS 41mm 粉紅色鋁金屬錶殼</p>
+            <h1>$12,555</h1>
+        </div>
+    </div>
+
+    <script>
+
+        // let const
+        let productInfo = [
+            {
+                "img": "https://img.pchome.com.tw/cs/cms/creatives/onsale/bbd61043-48d5-412b-8103-b09f68c48001.jpeg",
+                "title": "aaa",
+                "price": 123
+            },
+            {
+                "img": "https://img.pchome.com.tw/cs/cms/creatives/onsale/4707a1a2-ab11-477f-87ee-6a07cc3edc3a.jpeg"
+            }
+        ];
+    
+        for (let i = 0; i < productInfo.length; i++) {
+            console.log(productInfo[i].img);
+        }
+    
+    
+    </script>
+</body>
+
+</html>
